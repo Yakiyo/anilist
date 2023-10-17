@@ -12,6 +12,6 @@
 	];
 </script>
 
-<NavBar {items}/>
+<NavBar {items} />
 
 <slot />
