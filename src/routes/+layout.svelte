@@ -8,6 +8,7 @@
 		{ name: 'Browse', path: '/search/anime' },
 		{ name: 'Forum', path: '/forum/overview' }
 	];
+	const themes = ['Default', 'Dark', 'High Contrast', 'System Theme'];
 </script>
 
 <!-- Top nav bar section -->
@@ -28,7 +29,17 @@
 
 <!-- Footer section -->
 <footer>
-
+	<div class="themes">
+		<span class="text-sky">Site Theme</span>
+		<ul>
+			{#each themes as theme}
+				<li>{theme}</li>
+			{/each}
+			</ul>
+	</div>
+	<div class="links" />
+	<div class="links" />
+	<div class="links" />
 </footer>
 
 <style>
@@ -41,15 +52,16 @@
 
 	/* navbar styles */
 	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
 		background-color: #152232;
 		color: #a0b1c5;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		height: 60px;
-		top: 0;
-		padding: 0;
-		margin: 0;
 		width: 100%;
 	}
 	nav img {
@@ -85,6 +97,17 @@
 
 	/* footer styles */
 	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		background-color: #11161d;
+		min-height: 70px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	footer div {
+		padding: 30px;
 	}
 </style>
