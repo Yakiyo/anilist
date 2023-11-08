@@ -1,4 +1,6 @@
 <script>
+	import Footer from '../components/Footer.svelte';
+
 	const user = 'Yakiyo';
 	const menuItems = [
 		{ name: 'Home', path: '/home' },
@@ -8,7 +10,6 @@
 		{ name: 'Browse', path: '/search/anime' },
 		{ name: 'Forum', path: '/forum/overview' }
 	];
-	const themes = ['Default', 'Dark', 'High Contrast', 'System Theme'];
 </script>
 
 <!-- Top nav bar section -->
@@ -28,19 +29,7 @@
 <slot />
 
 <!-- Footer section -->
-<footer>
-	<div class="themes">
-		<span class="text-sky">Site Theme</span>
-		<ul>
-			{#each themes as theme}
-				<li>{theme}</li>
-			{/each}
-			</ul>
-	</div>
-	<div class="links" />
-	<div class="links" />
-	<div class="links" />
-</footer>
+<Footer />
 
 <style>
 	/* general styles */
@@ -48,6 +37,7 @@
 		background-color: #0b1622;
 		font-family: 'Overpass', 'Arial';
 		font-size: 14px;
+		color: #a0b1c5;
 	}
 
 	/* navbar styles */
@@ -57,7 +47,6 @@
 		left: 0;
 		right: 0;
 		background-color: #152232;
-		color: #a0b1c5;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -93,21 +82,5 @@
 
 	.menu > a:hover {
 		color: white;
-	}
-
-	/* footer styles */
-	footer {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: #11161d;
-		min-height: 70px;
-		display: flex;
-		justify-content: space-evenly;
-	}
-
-	footer div {
-		padding: 30px;
 	}
 </style>
