@@ -1,7 +1,7 @@
 <script>
 	const user = 'Yakiyo';
 	const menuItems = [
-		{ name: 'Home', path: '/' },
+		{ name: 'Home', path: '/home' },
 		{ name: 'Profile', path: `/user/${user}` },
 		{ name: 'Anime List', path: `/user/${user}/animelist` },
 		{ name: 'Manga List', path: `/user/${user}/mangalist` },
@@ -10,20 +10,36 @@
 	];
 </script>
 
+<!-- Top nav bar section -->
 <nav>
 	<div class="nav-item">
-		<a href="/"><img src="https://anilist.co/img/icons/icon.svg" alt="anilist-logo" /></a>
+		<a href="/home"><img src="https://anilist.co/img/icons/icon.svg" alt="anilist-logo" /></a>
 	</div>
 	<div class="nav-item menu">
 		{#each menuItems as item}
-			<a href={item.path} class={item.name === "Browse" ? "browse" : ""}>{item.name}</a>
+			<a href={item.path} class={item.name === 'Browse' ? 'browse' : ''}>{item.name}</a>
 		{/each}
 	</div>
 	<div class="nav-item">Search and User</div>
 </nav>
+
+<!-- Page content -->
 <slot />
 
+<!-- Footer section -->
+<footer>
+
+</footer>
+
 <style>
+	/* general styles */
+	:global(body) {
+		background-color: #0b1622;
+		font-family: 'Overpass', 'Arial';
+		font-size: 14px;
+	}
+
+	/* navbar styles */
 	nav {
 		background-color: #152232;
 		color: #a0b1c5;
@@ -35,7 +51,6 @@
 		padding: 0;
 		margin: 0;
 		width: 100%;
-		font-size: 14px;
 	}
 	nav img {
 		height: 50px;
@@ -60,10 +75,16 @@
 	.menu > a {
 		padding: 2%;
 		text-decoration: none;
+		font-weight: bold;
 		color: #a0b1c5;
 	}
 
-	:global(body) {
-		background-color: #0b1622;
+	.menu > a:hover {
+		color: white;
+	}
+
+	/* footer styles */
+	footer {
+		background-color: #11161d;
 	}
 </style>
