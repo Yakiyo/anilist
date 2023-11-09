@@ -37,41 +37,60 @@
 			{/each}
 		</ul>
 	</div>
-	{#each links as link}
-		<div class="links">
-			<ul>
-				{#each link as item}
-					<li><a href={item.url}>{item.name}</a></li>
-				{/each}
-			</ul>
-		</div>
-	{/each}
+
+	<div class="links-container">
+		{#each links as link}
+			<div class="links">
+				<ul>
+					{#each link as item}
+						<li><a href={item.url}>{item.name}</a></li>
+					{/each}
+				</ul>
+			</div>
+		{/each}
+	</div>
 </footer>
 
 <style>
 	footer {
-		position: fixed;
+		/* position: absolute; */
 		bottom: 0;
 		left: 0;
 		right: 0;
 		background-color: #11161d;
-		min-height: 70px;
 		display: flex;
 		justify-content: space-evenly;
+		flex-wrap: wrap;
 		font-size: 17px;
 	}
 
 	footer div {
 		padding: 30px;
+		border: 5px solid white;
 	}
 
-    footer a {
-        text-decoration: none;
-    }
+	footer a {
+		text-decoration: none;
+	}
+
+	footer > div {
+		flex-grow: 1;
+	}
+
+	footer > div.themes {
+		flex-grow: 2;
+	}
 
 	ul {
 		list-style-type: none;
 		padding: 0;
+	}
+
+	.themes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 70px;
 	}
 
 	.themes li {
@@ -79,7 +98,39 @@
 		padding: 4px;
 	}
 
+	.links-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.links a {
+		text-decoration: none;
+		color: #a0b1c5;
+		font-size: 16px;
+	}
+
+	.links a:hover {
+		color: rgb(73, 212, 247);
+	}
+
+	.links > ul > li {
+		padding-bottom: 15px;
+	}
+
 	.text-sky {
 		color: rgb(73, 212, 247);
+	}
+
+	@media only screen and (max-width: 1037px) {
+		/* For mobile phones: */
+		footer,
+		.links-container {
+			flex-direction: column;
+		}
+
+		.themes {
+			align-items: flex-start;
+		}
 	}
 </style>

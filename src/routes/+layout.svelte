@@ -26,7 +26,9 @@
 </nav>
 
 <!-- Page content -->
+<div id="content">
 <slot />
+</div>
 
 <!-- Footer section -->
 <Footer />
@@ -82,5 +84,9 @@
 
 	.menu > a:hover {
 		color: white;
+	}
+
+	#content {
+		min-height: 200px;
 	}
 </style>
