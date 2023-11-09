@@ -1,4 +1,4 @@
 <svelte:head>
-    <title>Home - Anilist</title>
+	<title>Home - Anilist</title>
 </svelte:head>
 <p>In root</p>

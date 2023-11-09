@@ -27,7 +27,7 @@
 
 <!-- Page content -->
 <div id="content">
-<slot />
+	<slot />
 </div>
 
 <!-- Footer section -->
