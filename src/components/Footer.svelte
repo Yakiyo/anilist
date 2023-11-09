@@ -13,6 +13,9 @@
 			{ name: 'Recommendations', url: '/recommendations' },
 			{ name: 'API', url: 'https://github.com/AniList/ApiV2-GraphQL-Docs' }
 		],
+		/**
+		 * TODO: Add icons in front of the links
+		*/
 		[
 			{ name: 'Discord', url: 'https://discord.gg/TF428cr' },
 			{ name: 'Twitter', url: 'https://twitter.com/AniListco' },
