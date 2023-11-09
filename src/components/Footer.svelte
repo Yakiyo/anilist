@@ -53,8 +53,8 @@
 
 <style>
 	footer {
-		/* position: absolute; */
-		bottom: 0;
+		position: sticky;
+		top: 100vh;
 		left: 0;
 		right: 0;
 		background-color: #11161d;
@@ -66,7 +66,6 @@
 
 	footer div {
 		padding: 30px;
-		border: 5px solid white;
 	}
 
 	footer a {
