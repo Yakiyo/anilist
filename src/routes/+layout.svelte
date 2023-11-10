@@ -1,6 +1,6 @@
 <script>
-	import Footer from '../components/Footer.svelte';
-	import Header from '../components/Header.svelte';
+	import Footer from '../components/_Footer.svelte';
+	import Header from '../components/_Header.svelte';
 </script>
 
 <div class="app">
@@ -19,11 +19,25 @@
 		font-family: 'Overpass', 'Arial';
 		font-size: 14px;
 		color: #a0b1c5;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 		margin: 0;
+	}
+	
+	.app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
 	}
 
 	main {
-		min-height: 100vh;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		width: 100%;
+		max-width: 64rem;
+		margin: 0 auto;
+		box-sizing: border-box;
+		justify-content: stretch;
 	}
 </style>
