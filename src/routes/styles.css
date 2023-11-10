@@ -1,0 +1,22 @@
+/* Global styles go here */
+
+@import '@fontsource/overpass';
+
+body {
+    /* General stuff */
+    min-height: 100vh;
+    margin: 0;
+    background-color: #0b1622;
+    /* Font and text related */
+    font-family: 'Overpass', 'Arial';
+    font-size: 14px;
+    color: #a0b1c5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
