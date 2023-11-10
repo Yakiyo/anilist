@@ -15,7 +15,7 @@
 		],
 		/**
 		 * TODO: Add icons in front of the links
-		*/
+		 */
 		[
 			{ name: 'Discord', url: 'https://discord.gg/TF428cr' },
 			{ name: 'Twitter', url: 'https://twitter.com/AniListco' },

@@ -1,11 +1,11 @@
 <svelte:head>
-    <title>Home · Anilist</title>
+	<title>Home · Anilist</title>
 </svelte:head>
 
 <div>Home Page</div>
 
 <style>
-    /* div {
+	/* div {
         width: 50vh;
         display: flex;
         justify-content: center;
