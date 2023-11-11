@@ -1,15 +1,18 @@
 <script lang="ts">
-	const user = 'Yakiyo';
-	const userAvatar =
-		'https://s4.anilist.co/file/anilistcdn/user/avatar/large/b763771-rOG6N4d3P5lq.png';
-	const menuItems: { name: string; path: string; log?: boolean }[] = [
+	import { user } from '../lib/user';
+	let menuItems: { name: string; path: string; log?: boolean }[] = [
 		{ name: 'Home', path: '/home' },
-		{ name: 'Profile', path: `/user/${user}`, log: true },
-		{ name: 'Anime List', path: `/user/${user}/animelist`, log: true },
-		{ name: 'Manga List', path: `/user/${user}/mangalist`, log: true },
+		{ name: 'Profile', path: `/user/${$user?.username}`, log: true },
+		{ name: 'Anime List', path: `/user/${$user?.username}/animelist`, log: true },
+		{ name: 'Manga List', path: `/user/${$user?.username}/mangalist`, log: true },
 		{ name: 'Browse', path: '/search/anime' },
 		{ name: 'Forum', path: '/forum/overview' }
 	];
+
+	// if no user logged in, then show 
+	if (!user) {
+		menuItems = menuItems.filter(e => !e.log);
+	}
 
 	let unread = 2;
 </script>
