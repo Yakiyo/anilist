@@ -15,8 +15,20 @@ body {
 
 a {
     text-decoration: none;
+    color: #a0b1c5;
 }
 
 a:hover {
     color: white;
+}
+
+
+/* 
+ * Reusable utility classes
+ */
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
