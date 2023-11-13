@@ -1,15 +1,11 @@
 import type { Load } from '@sveltejs/kit';
 import { token, isAuthed, fetchUser } from '$lib/store/';
-import { writable, readable, type Writable, type Readable } from 'svelte/store';
-import type { User } from '$lib/models';
+import { writable, readable } from 'svelte/store';
+import type { BaseLoadValue } from '$lib/models';
 
 export const ssr = false;
 
-export const load: Load = async (): Promise<{
-	token: Writable<string | null>;
-	isAuthed: Readable<boolean>;
-	user: User | null;
-}> => {
+export const load: Load = async (): Promise<BaseLoadValue> => {
 	if (import.meta.env.SSR)
 		return {
 			token: writable(null),
