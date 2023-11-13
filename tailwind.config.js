@@ -7,7 +7,7 @@ export default {
 			colors: {
 				// The background color in dark mode
 				secondary: '#a0b1c5',
-				header: '#152232',
+				header: '#152232'
 			}
 		}
 	},
