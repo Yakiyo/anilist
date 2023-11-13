@@ -5,7 +5,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				secondary: '#a0b1c5'
+				// The background color in dark mode
+				secondary: '#a0b1c5',
+				header: '#152232',
 			}
 		}
 	},
