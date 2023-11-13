@@ -11,5 +11,5 @@ export const storage = {
 	set: (key: string, value: string) => {
 		if (isSSR()) return;
 		return localStorage.setItem(key, value);
-	}
+	},
 };

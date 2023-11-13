@@ -9,7 +9,7 @@ export const token = writable<string | null>(
 	(() => {
 		if (import.meta.env.SSR) return null;
 		return storage.get('token');
-	})()
+	})(),
 );
 /**
  * Wether any user is currently logged in or not
@@ -27,9 +27,9 @@ export async function fetchUser(): Promise<User | null> {
 			id: 0,
 			name: 'Foo',
 			avatar: {
-				large: 'https://s4.anilist.co/file/anilistcdn/user/avatar/large/default.png'
+				large: 'https://s4.anilist.co/file/anilistcdn/user/avatar/large/default.png',
 			},
-			siteUrl: 'https://anilist.co'
+			siteUrl: 'https://anilist.co',
 		};
 	}
 

@@ -14,11 +14,11 @@ export const load: Load = async (): Promise<{
 		return {
 			token: writable(null),
 			isAuthed: readable(false),
-			user: null
+			user: null,
 		};
 	return {
 		token,
 		isAuthed,
-		user: await fetchUser()
+		user: await fetchUser(),
 	};
 };

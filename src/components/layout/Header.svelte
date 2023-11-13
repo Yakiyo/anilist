@@ -7,7 +7,7 @@
 		{ name: 'Anime List', path: `/user/${username}/animelist`, log: true },
 		{ name: 'Manga List', path: `/user/${username}/mangalist`, log: true },
 		{ name: 'Browse', path: '/search/anime' },
-		{ name: 'Forum', path: '/forum/overview' }
+		{ name: 'Forum', path: '/forum/overview' },
 	];
 </script>
 
