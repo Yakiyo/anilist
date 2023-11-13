@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	function onClick() {
+		document.documentElement.classList.toggle('dark');
+	}
+</script>
+
+<button on:click={onClick}>Press me!</button>
+<a href="https://anilist.co">Link</a>

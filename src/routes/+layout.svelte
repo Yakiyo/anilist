@@ -1,9 +1,10 @@
 <script>
+	import '../app.css';
 	/**
-	 * @type Record<string, any>
+	 * @type import('./$types').PageData
 	 */
 	export let data;
+	console.log(data.isAuthed);
 </script>
 
-{data.isAuthed}
 <slot />
