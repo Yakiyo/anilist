@@ -42,6 +42,7 @@
 					<a href="/user/${username}/animelist" class="capitalize p1">Anime List</a>
 					<a href="/user/${username}/mangalist" class="capitalize p1">Manga List</a>
 				{/if}
+				<!-- TODO: hover browse tooltip -->
 				<a href="/search/anime" class="capitalize p1 browse">Browse</a>
 				<a href="/forum/overview" class="capitalize p1">Forum</a>
 			</nav>
