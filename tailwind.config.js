@@ -9,6 +9,7 @@ export default {
 				secondary: '#a0b1c5',
 				header: '#152232',
 				footer: '#11161d',
+				ash: '#a0b1c5', // text color used in anilist
 			},
 		},
 	},
