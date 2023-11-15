@@ -36,12 +36,12 @@
 
 <footer class="bg-footer font-semibold mt-5 py-12 px-8">
 	<!-- the container -->
-	<div class="flex">
+	<div class="flex text-left">
 		<!-- Theme selector -->
 		<div>
 			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
 			<div
-				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm"
+				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1"
 				style="border: 2px solid #46546b; color: #2e3c48; background: #edf1f5;"
 			>
 				A
