@@ -34,37 +34,20 @@
 	];
 </script>
 
-<footer class="bg-footer flex justify-around text-base flex-col lg:flex-row">
-	<div class="p-12 grow">
-		<span class="text-sky-400">Site Themes</span>
-		<div class="flex flex-row">
+<footer class="bg-footer font-semibold mt-5 py-12 px-8">
+	<!-- the container -->
+	<div class="flex">
+		<!-- Theme selector -->
+		<div>
+			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
 			<div
-				class="h-6 w-6 m-1 border-4 rounded-lg border-solid border-black text-center flex justify-center items-center bg-white"
+				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm"
+				style="border: 2px solid #46546b; color: #2e3c48; background: #edf1f5;"
 			>
-				<p>A</p>
+				A
 			</div>
-			<div
-				class="h-6 w-6 m-1 border-4 rounded-lg border-solid border-black text-center flex justify-center items-center bg-header"
-			>
-				<p>A</p>
-			</div>
-			<div
-				class="h-6 w-6 m-1 border-4 rounded-lg border-solid border-black text-center flex justify-center items-center bg-gray-500"
-			>
-				<p>A</p>
-			</div>
-			<!-- TODO: add high contrast theme here someday -->
 		</div>
-	</div>
-	<div class="flex flex-col lg:flex-row grow-[2]">
-		{#each links as link}
-			<div class="p-12">
-				<ul>
-					{#each link as item}
-						<li><a href={item.url}>{item.name}</a></li>
-					{/each}
-				</ul>
-			</div>
-		{/each}
+		<!-- Links -->
+		<div />
 	</div>
 </footer>
