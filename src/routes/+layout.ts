@@ -3,6 +3,7 @@ import { token, isAuthed, fetchUser } from '$lib/store/';
 import { writable, readable } from 'svelte/store';
 import type { BaseLoadValue } from '$lib/models';
 
+export const prerender = true;
 export const ssr = false;
 
 export const load: Load = async (): Promise<BaseLoadValue> => {
