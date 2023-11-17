@@ -69,5 +69,4 @@
 		{/each}
 	</div>
 </footer>
-
 ```

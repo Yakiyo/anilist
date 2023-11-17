@@ -6,7 +6,7 @@
 	import { pageTitle } from '$lib';
 
 	let title = pageTitle($page.url.pathname);
-	page.subscribe((v) => title = pageTitle(v.url.pathname));
+	page.subscribe((v) => (title = pageTitle(v.url.pathname)));
 	export let data;
 	let username = data.user?.name;
 	let isAuthed = data.isAuthed;

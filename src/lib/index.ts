@@ -1,4 +1,4 @@
-import { storage } from "./storage";
+import { storage } from './storage';
 
 /**
  * Generate current page's title based on pathname

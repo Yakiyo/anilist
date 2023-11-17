@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { setTheme } from "$lib";
+	import { setTheme } from '$lib';
 
 	const links = [
 		[
