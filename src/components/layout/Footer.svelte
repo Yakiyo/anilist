@@ -45,7 +45,7 @@
 	<!-- the container -->
 	<div class="flex text-left w-full xl:max-w-[1140px] justify-between flex-col lg:flex-row">
 		<!-- Theme selector -->
-		<div class="basis-1/4 my-8">
+		<div class="basis-1/4 my-8 mx-4 px-8 lg:mx-0 lg:px-0">
 			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
 			<!-- Default -->
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -86,7 +86,7 @@
 			{#each linksArray as links, i}
 				<div class="{i === 2 ? 'grow' : ''} my-8">
 					{#each links as link}
-						<div class="mx-4 px-8">
+						<div class="mx-4 px-8 py-1">
 							<a href={link.url}
 								>{link.name}
 								{#if link.icon}
