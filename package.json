@@ -12,7 +12,18 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"dependencies": {
+		"@floating-ui/dom": "^1.5.3",
+		"@fontsource/overpass": "^5.0.15",
+		"@fortawesome/free-solid-svg-icons": "^6.4.2",
+		"@urql/svelte": "^4.0.4",
+		"floating-ui-svelte": "^1.0.2",
+		"graphql": "^16.8.1",
+		"svelte-fa": "^3.0.4"
+	},
 	"devDependencies": {
+		"@graphql-codegen/cli": "^5.0.0",
+		"@graphql-codegen/typescript": "^4.0.1",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.20.4",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -32,8 +43,5 @@
 		"vite": "^4.4.2",
 		"vitest": "^0.34.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"@fontsource/overpass": "^5.0.15"
-	}
+	"type": "module"
 }
