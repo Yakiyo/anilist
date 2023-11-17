@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { faDiscord, faTwitter, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+	import Icon from 'svelte-fa';
 	import { setTheme } from '$lib';
 
 	const links = [
@@ -18,10 +20,10 @@
 		 * TODO: Add icons in front of the links
 		 */
 		[
-			{ name: 'Discord', url: 'https://discord.gg/TF428cr' },
-			{ name: 'Twitter', url: 'https://twitter.com/AniListco' },
-			{ name: 'Facebook', url: 'https://www.facebook.com/AniListco' },
-			{ name: 'Github', url: 'https://github.com/AniList' },
+			{ name: 'Discord', url: 'https://discord.gg/TF428cr', icon: faDiscord },
+			{ name: 'Twitter', url: 'https://twitter.com/AniListco', icon: faTwitter },
+			{ name: 'Facebook', url: 'https://www.facebook.com/AniListco', icon: faFacebook },
+			{ name: 'Github', url: 'https://github.com/AniList', icon: faGithub },
 		],
 		[
 			{ name: 'Add Data', url: 'https://submission-manual.anilist.co/' },
