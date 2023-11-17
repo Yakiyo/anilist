@@ -1,11 +1,12 @@
 <script>
+	import '../app.css';
 	import Header from '../components/layout/Header.svelte';
 	import Footer from '../components/layout/Footer.svelte';
 	import { page } from '$app/stores';
-	import '../app.css';
 	import { pageTitle } from '$lib';
 
-	$: title = pageTitle($page.url.pathname);
+	let title = pageTitle($page.url.pathname);
+	page.subscribe((v) => title = pageTitle(v.url.pathname));
 	export let data;
 	let username = data.user?.name;
 	let isAuthed = data.isAuthed;

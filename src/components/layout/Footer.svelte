@@ -1,9 +1,7 @@
-<script>
-	// Site themes, not supporting high contrast cz idk how to implement
-	// three different themes using tailwind
-	const themes = ['Default', 'Dark', /**'High Contrast' ,*/ 'System Theme'];
+<script lang="ts">
+	import { setTheme } from "$lib";
 
-	const links = [
+	const _links = [
 		[
 			{ name: 'Logout', url: '#' },
 			{ name: 'Donate', url: '/donate' },
@@ -40,21 +38,36 @@
 		<!-- Theme selector -->
 		<div>
 			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
+			<!-- Default -->
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<div
 				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1"
 				style="border: 2px solid #46546b; color: #2e3c48; background: #edf1f5;"
+				role="button"
+				tabindex="0"
+				on:click={() => setTheme('default')}
 			>
 				A
 			</div>
+			<!-- Dark -->
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<div
 				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1 bg-footer"
 				style="border: 2px solid #46546b;"
+				role="button"
+				tabindex="0"
+				on:click={() => setTheme('dark')}
 			>
 				A
 			</div>
+			<!-- System Preference -->
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<div
-				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1"
+				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1 text-white"
 				style="border: 2px solid #46546b; background: linear-gradient(45deg,#11161d 55%,#edf1f5 0);"
+				role="button"
+				tabindex="0"
+				on:click={() => setTheme('sys')}
 			>
 				A
 			</div>

@@ -6,7 +6,7 @@ export default {
 		extend: {
 			colors: {
 				// The background color in dark mode
-				secondary: '#a0b1c5',
+				dark: '#0b1622',
 				header: '#152232',
 				footer: '#11161d',
 				ash: '#a0b1c5', // text color used in anilist

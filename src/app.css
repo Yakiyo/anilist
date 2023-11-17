@@ -11,6 +11,7 @@ body {
 	/* Font and text related */
 	font-family: 'Overpass', 'Arial';
 	font-size: 14px;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 a {
