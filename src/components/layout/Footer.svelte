@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { setTheme } from "$lib";
 
-	const _links = [
+	const links = [
 		[
 			{ name: 'Logout', url: '#' },
 			{ name: 'Donate', url: '/donate' },
@@ -32,9 +32,9 @@
 	];
 </script>
 
-<footer class="bg-footer font-semibold mt-5 py-12 px-8">
+<footer class="bg-footer font-semibold mt-5 py-12 px-8 flex justify-center">
 	<!-- the container -->
-	<div class="flex text-left w-full">
+	<div class="flex text-left w-full xl:max-w-[1140px]">
 		<!-- Theme selector -->
 		<div>
 			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
@@ -52,7 +52,7 @@
 			<!-- Dark -->
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<div
-				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1 bg-footer"
+				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1 text-white bg-footer"
 				style="border: 2px solid #46546b;"
 				role="button"
 				tabindex="0"
