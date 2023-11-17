@@ -45,6 +45,7 @@
 	<!-- the container -->
 	<div class="flex text-left w-full xl:max-w-[1140px] justify-between flex-col lg:flex-row">
 		<!-- Theme selector -->
+		<!-- TODO: show theme name on hover -->
 		<div class="basis-1/4 my-8 mx-4 px-8 lg:mx-0 lg:px-0">
 			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
 			<!-- Default -->
