@@ -28,6 +28,9 @@ dependencies:
     version: 3.0.4
 
 devDependencies:
+  '@fortawesome/fontawesome-common-types':
+    specifier: ^6.4.2
+    version: 6.4.2
   '@graphql-codegen/cli':
     specifier: ^5.0.0
     version: 5.0.0(graphql@16.8.1)(typescript@5.2.2)
@@ -984,7 +987,6 @@ packages:
     resolution: {integrity: sha512-1DgP7f+XQIJbLFCTX1V2QnxVmpLdKdzzo2k8EmvDOePfchaIGQ9eCHj2up3/jNEbZuBqel5OxiaOJf37TWauRA==}
     engines: {node: '>=6'}
     requiresBuild: true
-    dev: false
 
   /@fortawesome/free-solid-svg-icons@6.4.2:
     resolution: {integrity: sha512-sYwXurXUEQS32fZz9hVCUUv/xu49PEJEyUOsA51l6PU/qVgfbTb2glsTEaJngVVT8VqBATRIdh7XVgV1JF1LkA==}
