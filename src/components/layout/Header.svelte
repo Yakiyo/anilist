@@ -24,9 +24,9 @@
 	{#if show}
 		<header
 			transition:slide={{ delay: 250, duration: 1000, easing: quintOut, axis: 'y' }}
-			class="bg-header flex flex-row fixed top-0 right-0 left-0 h-16 justify-around items-center"
+			class="fixed left-0 right-0 top-0 flex h-16 flex-row items-center justify-around bg-header"
 		>
-			<div class="basis-1/3 flex justify-center">
+			<div class="flex basis-1/3 justify-center">
 				<a href={isAuthed ? '/home' : '/'}
 					><img
 						src="https://anilist.co/img/icons/icon.svg"
@@ -35,18 +35,18 @@
 					/></a
 				>
 			</div>
-			<nav class="flex flex-row justify-around basis-1/4">
-				<a href="/home" class="capitalize p1">home</a>
+			<nav class="flex basis-1/4 flex-row justify-around">
+				<a href="/home" class="p1 capitalize">home</a>
 				{#if isAuthed && username}
-					<a href="/user/${username}" class="capitalize p1">Profile</a>
-					<a href="/user/${username}/animelist" class="capitalize p1">Anime List</a>
-					<a href="/user/${username}/mangalist" class="capitalize p1">Manga List</a>
+					<a href="/user/${username}" class="p1 capitalize">Profile</a>
+					<a href="/user/${username}/animelist" class="p1 capitalize">Anime List</a>
+					<a href="/user/${username}/mangalist" class="p1 capitalize">Manga List</a>
 				{/if}
 				<!-- TODO: hover browse tooltip -->
-				<a href="/search/anime" class="capitalize p1 browse">Browse</a>
-				<a href="/forum/overview" class="capitalize p1">Forum</a>
+				<a href="/search/anime" class="p1 browse capitalize">Browse</a>
+				<a href="/forum/overview" class="p1 capitalize">Forum</a>
 			</nav>
-			<div class="basis-1/3 flex flex-row justify-center">
+			<div class="flex basis-1/3 flex-row justify-center">
 				<svg
 					height="32px"
 					version="1.1"

@@ -42,13 +42,13 @@
 	];
 </script>
 
-<footer class="bg-footer text-base font-semibold mt-5 py-12 px-8 flex justify-center">
+<footer class="mt-5 flex justify-center bg-footer px-8 py-12 text-base font-semibold">
 	<!-- the container -->
-	<div class="flex text-left w-full xl:max-w-[1140px] justify-between flex-col lg:flex-row">
+	<div class="flex w-full flex-col justify-between text-left lg:flex-row xl:max-w-[1140px]">
 		<!-- Theme selector -->
 		<!-- TODO: show theme name on hover -->
-		<div class="basis-1/4 my-8 mx-4 px-8 lg:mx-0 lg:px-0">
-			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
+		<div class="mx-4 my-8 basis-1/4 px-8 lg:mx-0 lg:px-0">
+			<h2 class="pb-4 text-lg font-bold text-sky-400">Site Theme</h2>
 			<!-- Default -->
 			<ThemeIcon theme="default" styles={['color: #2e3c48;', 'background: #edf1f5;']} />
 			<!-- Dark -->
@@ -61,7 +61,7 @@
 			/>
 		</div>
 		<!-- Links -->
-		<div class="flex flex-col lg:flex-row justify-around basis-1 grow my-8">
+		<div class="my-8 flex grow basis-1 flex-col justify-around lg:flex-row">
 			{#each linksArray as links, i}
 				<div class="{i === 2 ? 'grow' : ''} my-8">
 					{#each links as link}
