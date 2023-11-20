@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@floating-ui/dom':
-    specifier: ^1.5.3
-    version: 1.5.3
+  '@floating-ui/core':
+    specifier: ^1.5.0
+    version: 1.5.0
   '@fontsource/overpass':
     specifier: ^5.0.15
     version: 5.0.15
@@ -29,6 +29,9 @@ dependencies:
   svelte-fa:
     specifier: ^3.0.4
     version: 3.0.4
+  svelte-floating-ui:
+    specifier: ^1.5.6
+    version: 1.5.6
 
 devDependencies:
   '@fortawesome/fontawesome-common-types':
@@ -4737,6 +4740,13 @@ packages:
 
   /svelte-fa@3.0.4:
     resolution: {integrity: sha512-y04vEuAoV1wwVDItSCzPW7lzT6v1bj/y1p+W1V+NtIMpQ+8hj8MBkx7JFD7JHSnalPU1QiI8BVfguqheEA3nPg==}
+    dev: false
+
+  /svelte-floating-ui@1.5.6:
+    resolution: {integrity: sha512-hM0mGxrO5+G725XW315Jd5JgeLb/SFdgRWWDz2YB30BaiP599TU/FKADNA6HMd+5yGsXx0rHGbq2Ynlq1IRucA==}
+    dependencies:
+      '@floating-ui/core': 1.5.0
+      '@floating-ui/dom': 1.5.3
     dev: false
 
   /svelte-hmr@0.15.3(svelte@4.2.3):
