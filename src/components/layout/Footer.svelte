@@ -7,7 +7,6 @@
 		type IconDefinition,
 	} from '@fortawesome/free-brands-svg-icons';
 	import Icon from 'svelte-fa';
-	import { setTheme } from '$lib';
 	import ThemeIcon from './ThemeIcon.svelte';
 
 	const linksArray: {
@@ -57,7 +56,7 @@
 			<ThemeIcon
 				theme="sys"
 				classes={['text-white']}
-				styles={['background: linear-gradient(45deg,#11161d 55%,#edf1f5 0);']}
+				styles={['background: linear-gradient(to top right, #11161d 50%, #edf1f5 50%);']}
 			/>
 		</div>
 		<!-- Links -->
