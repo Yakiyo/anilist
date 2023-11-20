@@ -50,8 +50,7 @@
 			</nav>
 			<!-- If user authed, show search icon and user avatar, else show login button -->
 			<div class="flex basis-1/3 flex-row justify-center">
-			{#if isAuthed}
-			
+				{#if isAuthed}
 					<svg
 						height="32px"
 						version="1.1"
@@ -73,10 +72,14 @@
 							></g
 						></svg
 					>
-			{:else}
-				<button class="bg-sky-400 text-white capitalize rounded hover:shadow-2xl p-2">Login</button>
-			{/if}
-		</div>
+				{:else}
+					<a
+						href="/"
+						class="rounded bg-blue-600 px-6 py-2 text-base capitalize text-white transition-all duration-75 ease-in-out hover:scale-110 hover:shadow-[0px_0px_5px_cyan] hover:shadow-sky-500"
+						>Login</a
+					>
+				{/if}
+			</div>
 		</header>
 	{/if}
 </div>
