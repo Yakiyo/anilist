@@ -8,6 +8,7 @@
 	} from '@fortawesome/free-brands-svg-icons';
 	import Icon from 'svelte-fa';
 	import { setTheme } from '$lib';
+	import ThemeIcon from './ThemeIcon.svelte';
 
 	const linksArray: {
 		name: string;
@@ -49,38 +50,15 @@
 		<div class="basis-1/4 my-8 mx-4 px-8 lg:mx-0 lg:px-0">
 			<h2 class="font-bold text-sky-400 pb-4 text-lg">Site Theme</h2>
 			<!-- Default -->
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<div
-				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1"
-				style="border: 2px solid #46546b; color: #2e3c48; background: #edf1f5;"
-				role="button"
-				tabindex="0"
-				on:click={() => setTheme('default')}
-			>
-				A
-			</div>
+			<ThemeIcon theme="default" styles={['color: #2e3c48;', 'background: #edf1f5;']} />
 			<!-- Dark -->
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<div
-				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1 text-white bg-footer"
-				style="border: 2px solid #46546b;"
-				role="button"
-				tabindex="0"
-				on:click={() => setTheme('dark')}
-			>
-				A
-			</div>
+			<ThemeIcon theme="dark" classes={['text-white', 'bg-footer']} />
 			<!-- System Preference -->
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<div
-				class="cursor-pointer inline-block font-medium h-6 w-6 rounded-sm mr-3 pl-[2px] pt-1 text-white"
-				style="border: 2px solid #46546b; background: linear-gradient(45deg,#11161d 55%,#edf1f5 0);"
-				role="button"
-				tabindex="0"
-				on:click={() => setTheme('sys')}
-			>
-				A
-			</div>
+			<ThemeIcon
+				theme="sys"
+				classes={['text-white']}
+				styles={['background: linear-gradient(45deg,#11161d 55%,#edf1f5 0);']}
+			/>
 		</div>
 		<!-- Links -->
 		<div class="flex flex-col lg:flex-row justify-around basis-1 grow my-8">

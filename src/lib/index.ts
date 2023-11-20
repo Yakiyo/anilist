@@ -1,3 +1,4 @@
+import type { themes } from './models';
 import { storage } from './storage';
 
 /**
@@ -17,7 +18,7 @@ export function pageTitle(pathname: string): string {
  * sets current theme
  * @param theme the theme to set
  */
-export function setTheme(theme: 'dark' | 'default' | 'sys'): void {
+export function setTheme(theme: themes): void {
 	let chosen = theme;
 	storage.set('theme', theme);
 	if (theme == 'sys') {
@@ -32,6 +33,6 @@ export function setTheme(theme: 'dark' | 'default' | 'sys'): void {
 	}
 }
 
-export function savedTheme(): 'dark' | 'default' | 'sys' {
-	return (storage.get('theme') ?? 'default') as 'dark' | 'default' | 'sys';
+export function savedTheme(): themes {
+	return (storage.get('theme') ?? 'default') as themes;
 }

@@ -18,3 +18,8 @@ export type BaseLoadValue = {
 	isAuthed: Readable<boolean>;
 	user: User | null;
 };
+
+/**
+ * Supported themes
+ */
+export type themes = 'dark' | 'default' | 'sys';
