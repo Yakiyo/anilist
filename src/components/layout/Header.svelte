@@ -24,7 +24,8 @@
 	{#if show}
 		<header
 			transition:slide={{ delay: 250, duration: 1000, easing: quintOut, axis: 'y' }}
-			class="fixed left-0 right-0 top-0 flex h-16 flex-row items-center justify-around bg-header"
+			class="fixed left-0 right-0 top-0 flex h-16 flex-row items-center justify-around bg-[#2b2d42] dark:bg-header"
+			style="transition: background 0.8s ease 0s, top 0.5s ease 0s;"
 		>
 			<!-- Logo section -->
 			<div class="flex basis-1/3 justify-center">
