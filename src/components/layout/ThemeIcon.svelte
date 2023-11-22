@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { setTheme } from '$lib';
+	import { capitalize, setTheme } from '$lib';
 	import type { themes } from '$lib/models';
 	import { createFloatingActions } from 'svelte-floating-ui';
 	import { offset, shift, flip } from 'svelte-floating-ui/core';
@@ -32,8 +32,11 @@
 >
 	A
 	{#if showTooltip}
-		<div class="absolute inline rounded bg-gray-500 px-2 py-1 text-white" use:floatingContent>
-			{theme}
+		<div
+			class="absolute inline rounded bg-gray-800 px-2 py-3 text-sm text-white"
+			use:floatingContent
+		>
+			{theme === 'sys' ? 'System Theme' : capitalize(theme)}
 		</div>
 	{/if}
 </button>
