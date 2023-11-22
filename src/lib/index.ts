@@ -1,5 +1,6 @@
 import type { themes } from './models';
 import { storage } from './storage';
+import { capitalize } from './util';
 
 /**
  * Generate current page's title based on pathname
@@ -9,8 +10,7 @@ import { storage } from './storage';
 export function pageTitle(pathname: string): string {
 	let path = pathname;
 	if (path === '/') return 'Anilist: Track, Discover, Share Anime and Manga';
-	path = path.substring(1);
-	path = path.charAt(0).toUpperCase() + path.substring(1);
+	path = capitalize(path.substring(1));
 	return `${path} · Anilist`;
 }
 
@@ -36,3 +36,5 @@ export function setTheme(theme: themes): void {
 export function savedTheme(): themes {
 	return (storage.get('theme') ?? 'default') as themes;
 }
+
+export * from './util';
