@@ -23,7 +23,7 @@
 	];
 </script>
 
-<div class="flex w-full flex-col items-center justify-center">
+<div class="mt-[50px] flex w-full flex-col items-center justify-center">
 	<!-- Landing section -->
 	<div
 		class="mx-0 my-auto mb-5 flex max-w-[1100px] flex-col items-center justify-center rounded-[20px] bg-[#0a1625] px-20 py-[60px]"
@@ -33,17 +33,26 @@
 			Track, share and discover your favourite anime and manga with Anilist
 		</h2>
 		<!-- Features section -->
-		<div class="grid grid-cols-4 gap-16">
+		<div class="grid grid-cols-1 gap-x-[60px] gap-y-[70px] p-6 md:grid-cols-2">
 			{#each features as feature}
-				<div>
-					<img src={feature.icon} alt="feature-icon" />
+				<!-- feature card -->
+				<div
+					class="grid grid-cols-2 gap-7 py-3 md:gap-[36px]"
+					style="grid-template-columns: 80px auto;"
+				>
+					<img class="max-h-[96px]" src={feature.icon} alt="feature-icon" />
 					<div>
-						<h3>{feature.title}</h3>
-						<div>{feature.desc}</div>
+						<h3 class="text-base font-semibold text-[#ecf6fe]">{feature.title}</h3>
+						<div class="text-[#acd5f2]">{feature.desc}</div>
 					</div>
 				</div>
 			{/each}
 		</div>
+		<!-- Join button -->
+		<a href="/login" class="items-center bg-[#3577ff] rounded-[30px] mb-0 pb-0 h-12 w-[200px]">
+			<div>Join Now</div>
+			<div class="rounded-full"></div>
+		</a>
 	</div>
 	<div>Search</div>
 </div>
