@@ -49,7 +49,7 @@
 			{/each}
 		</div>
 		<!-- Join button -->
-		<a href="/login" class="items-center bg-[#3577ff] rounded-[30px] mb-0 pb-0 h-12 w-[200px]">
+		<a href="/login" class="mb-0 h-12 w-[200px] items-center rounded-[30px] bg-[#3577ff] pb-0">
 			<div>Join Now</div>
 			<div class="rounded-full"></div>
 		</a>
