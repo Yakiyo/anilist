@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { faArrowAltCircleRight, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+	import Icon from 'svelte-fa';
 	const features: { title: string; desc: string; icon: string }[] = [
 		{
 			title: 'Discover your obsessions',
@@ -49,10 +51,13 @@
 			{/each}
 		</div>
 		<!-- Join button -->
-		<a href="/login" class="mb-0 h-12 w-[200px] items-center rounded-[30px] bg-[#3577ff] pb-0">
+		<a
+			href="/login"
+			class="-mb-20 mt-9 flex h-12 w-[200px] items-center justify-evenly rounded-[30px] bg-[#3577ff] pb-0 text-lg font-bold text-[#f7fafc]"
+		>
 			<div>Join Now</div>
-			<div class="rounded-full"></div>
+			<Icon icon={faArrowCircleRight} size="lg"></Icon>
 		</a>
 	</div>
-	<div>Search</div>
+	<div class="my-20">Search section not implemented yet. TODO!</div>
 </div>
