@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { faArrowAltCircleRight, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+	import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 	import Icon from 'svelte-fa';
 	const features: { title: string; desc: string; icon: string }[] = [
 		{
@@ -23,6 +23,11 @@
 			icon: '/icons/landing/custom.svg',
 		},
 	];
+
+	const showcase: {
+		title: string;
+		path: string;
+	}[] = [];
 </script>
 
 <div class="mt-[50px] flex w-full flex-col items-center justify-center">
@@ -59,5 +64,9 @@
 			<Icon icon={faArrowCircleRight} size="lg"></Icon>
 		</a>
 	</div>
-	<div class="my-20">Search section not implemented yet. TODO!</div>
+	<div class="my-20">
+		<!-- {#each showcase as _}
+			
+		{/each} -->
+	</div>
 </div>
